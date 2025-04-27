@@ -1,0 +1,240 @@
+﻿* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #c41230; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #b30b27;
+}
+
+    nav .navigation {
+        display: flex;
+    }
+
+.navigation h4 {
+    margin-inline: 21px;
+    margin-top: 20px;
+}
+
+nav h4 {
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+nav a img {
+    padding-top: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+nav h4:hover {
+    margin-top: 10px;
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+}
+
+nav h2 {
+    font-family: "Nosifer", sans-serif;
+    margin-top: 1px;
+}
+
+    nav h2:hover {
+        font-weight: 80;
+    }
+
+nav img {
+    width: 4%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    padding: 17px;
+    color: white;
+}
+
+    .navbar button {
+        margin-inline: 11px;
+        width: 160px;
+        height: 37px;
+        background-color: rgb(241, 3, 39);
+        color: white;
+        border: 2px;
+        border-radius: 22px;
+        font-size: 19px;
+    }
+
+.main img {
+    width: 100%;
+}
+
+h2 {
+    margin-left: 32px;
+    padding: 11px;
+    margin-top: 11px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 22px;
+}
+
+    .card .crd img {
+        width: 70%;
+    }
+
+.crd:hover {
+    transform: translateY(4px);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.card button {
+    border-radius: 6px;
+    padding: 7px;
+    border-color: #c41230;
+    font-weight: bold;
+}
+
+    .card button:hover {
+        background-color: #c41230;
+        color: whitesmoke;
+    }
+
+.s-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 33px;
+}
+
+    .s-card .s-crd img {
+        width: 80%;
+    }
+
+.s-crd .inner {
+    width: 270px;
+    height: 50px;
+    padding: 23px;
+    background-color: rgb(202, 199, 199);
+    margin-left: 55px;
+    margin-top: -11px;
+}
+
+.s-crd button {
+    width: 160px;
+    height: 40px;
+    background-color: rgb(241, 39, 4);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+    .s-crd button:hover {
+        color: red;
+        background-color: white;
+        transition: 0.3s;
+        font-weight: bolder;
+    }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-top: 33px;
+    color: white;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Styles for cart items list */
+#cart-items-list {
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+    .cart-item:last-child {
+        border-bottom: none;
+    }
+
+/* Styles for total price */
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styles for checkout button */
+#checkout-btn {
+    /* display: block; */
+    z-index: 2;
+    position: fixed;
+    top: 18%;
+    right: 25%;
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #c41230;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #checkout-btn:hover {
+        background-color: #ff6347;
+    }

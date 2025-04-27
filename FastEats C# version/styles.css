@@ -1,0 +1,139 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #C41230;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: #e9f4fb;
+}
+
+    nav .navigation {
+        display: flex;
+    }
+
+    nav h1 {
+        font-family: "Nosifer", sans-serif;
+        margin-top: 10px;
+        font-size: 50px;
+    }
+
+        nav h1:hover {
+            font-weight: 80;
+        }
+.tracker-container {
+    max-width: 900px;
+    margin: 70px auto;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 10px 20px 10px rgba(45, 31, 197, 0.477);
+    padding: 20px;
+}
+
+.tracker-title {
+    text-align: center;
+    color: #d91f26;
+    font-size: 30px;
+    margin-bottom: 90px;
+}
+
+.tracker-steps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tracker-step {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: 5px solid #d91f26;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+    .tracker-step:not(:last-child) {
+        margin-right: 20px;
+    }
+
+.status-logo1, .status-logo2, .status-logo3, .status-logo4 {
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.status-logo1 {
+    width: 120px;
+}
+
+.status-logo2 {
+    width: 100px;
+}
+
+/* Add this CSS to adjust the positioning of the rider image */
+.status-logo3 {
+    position: absolute;
+    top: -90px; /* Adjust the distance from the top of the box */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+}
+
+
+.status-logo4 {
+    width: 120px;
+}
+
+.tracker-step.active {
+    background-color: #d91f26;
+    color: #fff;
+    animation: blink 1s infinite;
+}
+
+.loading-bar {
+    background-color: #ddd;
+    height: 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-progress {
+    background-color: #d91f26;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #d91f26;
+    }
+
+    50% {
+        background-color: #1a0202;
+    }
+
+    100% {
+        background-color: #d91f26;
+    }
+}
+
+.tracker-step.active .step-label {
+    color: #fff;
+}
