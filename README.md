@@ -1,7 +1,7 @@
 # FastEats - Online Fast Food Ordering Platform (C# ASP.NET Core)
 
 ## 🌍 Introduction
-FastEats is a modern and user-friendly online platform built using **C# and ASP.NET Core**. It is designed to make fast food ordering seamless and efficient, offering a range of features for Customers, Employees, Riders, and Admins.
+FastEats is a modern and user-friendly online platform built using **C# and ASP.NET Core**. It is designed to make fast food ordering seamless and efficient, offering a range of features for the customers.
 
 This version leverages ASP.NET Core Web App features, providing a smooth web experience and an organized backend system.
 
@@ -10,7 +10,7 @@ This version leverages ASP.NET Core Web App features, providing a smooth web exp
 ### 1. Prerequisites
 - Visual Studio 2022 (or later)
 - .NET SDK (relevant version like .NET 6.0 or .NET 7.0)
-- SQL Server or any database you want to connect
+- SQL Server Management Studio
 
 ### 2. Create the Project
 1. Open **Visual Studio 2022**.
@@ -71,6 +71,11 @@ When you create the project, the following **packages** will be installed automa
 - Order Tracking
 - Profile Management
 
+## 📊 Notes
+
+- Some frontend issues may exist because the project was converted from a previous HTML/CSS/JavaScript version.
+- Signup functionality with database is working correctly.
+- Core backend features like authentication, cart management, and order placement are functional.
 
 ## 🌟 Conclusion
 FastEats built on ASP.NET Core provides an efficient, scalable, and modern platform for fast food ordering. With robust features, dynamic menus, and real-time order tracking, FastEats aims to deliver an excellent experience for both customers and service providers.
